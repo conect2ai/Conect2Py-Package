@@ -1,6 +1,9 @@
-<header>
-  <img width="500" src="http://conect2ai.dca.ufrn.br/static/assets/img/logo.png" />
-</header>
+&nbsp;
+&nbsp;
+<p align="center">
+  <img width="600" src="http://conect2ai.dca.ufrn.br/static/assets/img/logo.png" />
+</p>
+&nbsp;
 
 # TACpy
 
