@@ -249,4 +249,4 @@ And finally here is a example of the result:
 
 1. Signoretti, G.; Silva, M.; Andrade, P.; Silva, I.; Sisinni, E.; Ferrari, P. "An Evolving TinyML Compression Algorithm for IoT Environments Based on Data Eccentricity". Sensors 2021, 21, 4153. https://doi.org/10.3390/s21124153
 
-2. Medeiros, T.; Amaral, M.; Targino, M; Silva, M.; Silva, I.; Sisinni, E.; Ferrari, P.; "TinyML Custom AI Algorithms for Low-Power IoT Data Compression: A Bridge Monitoring Case Study" - 2023 IEEE International Workshop on Metrology for Industry 4.0 & IoT (MetroInd4.0&IoT), 2023. 10.1109/MetroInd4.0IoT57462.2023.10180152
+2. Medeiros, T.; Amaral, M.; Targino, M; Silva, M.; Silva, I.; Sisinni, E.; Ferrari, P.; "TinyML Custom AI Algorithms for Low-Power IoT Data Compression: A Bridge Monitoring Case Study" - 2023 IEEE International Workshop on Metrology for Industry 4.0 & IoT (MetroInd4.0&IoT), 2023. (10.1109/MetroInd4.0IoT57462.2023.10180152)[https://ieeexplore.ieee.org/document/10180152]
