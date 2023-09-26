@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tac/__init__.py
+tac.egg-info/PKG-INFO
+tac.egg-info/SOURCES.txt
+tac.egg-info/dependency_links.txt
+tac.egg-info/requires.txt
+tac.egg-info/top_level.txt

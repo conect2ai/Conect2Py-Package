@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tac
+Version: 0.1.0
+Summary: A python library for data compression using TAC (Tiny Anomaly Compression)
+Author: Conect2Ai
+License: 3-clause BSD
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: 3-clause BSD
+License-File: LICENSE
