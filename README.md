@@ -15,7 +15,7 @@ Currente version:  ![version](https://img.shields.io/badge/version-0.1.0-blue)
 #### Dependencies
 
 ```bash
-*Python 3, Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, Ipython*
+Python 3.11, Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, Ipython
 ```
 
 ---
