@@ -1,3 +1,10 @@
+&nbsp;
+&nbsp;
+<p align="center">
+  <img width="600" src="http://conect2ai.dca.ufrn.br/static/assets/img/logo.png" />
+</p>
+&nbsp;
+
 # TACpy
 
 TACpy is a Python software package for data compression using TAC (Tiny Anomaly Compression). The TAC algorithm is based on the concept the data eccentricity and does not require previously established mathematical models or any assumptions about the underlying data distribution.  Additionally, it uses recursive equations, which enables an efficient computation with low computational cost, using little memory and processing power.
