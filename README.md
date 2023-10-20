@@ -1,7 +1,7 @@
 &nbsp;
 &nbsp;
 <p align="center">
-  <img width="600" src="[http://conect2ai.dca.ufrn.br/static/assets/img/logo.png](https://github.com/conect2ai/Conect2Py-Package/assets/56210040/2685de1d-b671-4612-a9e1-d1e0b51d465f)" />
+  <img width="600" src="https://github.com/conect2ai/Conect2Py-Package/assets/56210040/2685de1d-b671-4612-a9e1-d1e0b51d465f" />
 </p>
 
 &nbsp;
