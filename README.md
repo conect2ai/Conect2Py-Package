@@ -61,11 +61,11 @@ from tac.utils.plots import (plot_curve_comparison, plot_dist_comparison, plot_m
 - Setting up the initial variables
 
 ```Python
-model_name = 'TAC_Voltage_data'
+model_name = 'TAC_Compression'
 
 params = {
-    'window_size': np.arange(1, 41, 1),
-    'm': np.round(np.arange(0.1, 0.8, 0.1), 2),
+    'window_size': np.arange(2, 30, 1),
+    'm': np.round(np.arange(0.1, 2.1, 0.1), 2),
 }
 
 param_combination = create_param_combinations(params)
@@ -77,14 +77,23 @@ compressor_list = create_compressor_list(param_combination)
 ```Python
 result_df = run_multiple_instances(compressor_list=compressor_list, 
                                 param_list=param_combination,
-                                series_to_compress=df['voltage'].dropna(), # Example of sensor data
+                                series_to_compress=dataframe['sensor_data'].dropna(),
                                 cf_score_beta=2
                                 )
 ```
 
 - This function returns a pandas Dataframe containing the results of all compression methods. You can expect something like:
 
-![image](https://github.com/MiguelEuripedes/TACpy/assets/56210040/a7b97cfd-b8b1-424c-8a41-99f8aafb203e)
+|   | param     |	reduction_rate | reduction_factor |	mse	    |  rmse  |	nrmse  |	mae    |	psnr	 | ncc	  | cf_score  |
+| - | --------- | -------------- | ---------------- | ------- | ------ | ------- | ------- | ------- | ------ | --------- |
+| 0	| (2, 0.1)	|  0.4507        | 1.8204           | 0.0648	| 0.2545 |	0.0609 | 0.0127	 | 39.9824 | 0.9982	| 0.8031    |
+| 1	| (2, 0.2)	|  0.4507	       | 1.8204           | 0.0648	| 0.2545 |	0.0609 | 0.0127	 | 39.9823 | 0.9982	| 0.8031    |
+| 2	| (2, 0.3)	|  0.4507	       | 1.8204           | 0.0648	| 0.2545 |	0.0609 | 0.0127	 | 39.9823 | 0.9982	| 0.8031    |
+| 3	| (2, 0.4)	|  0.4508	       | 1.8209           |	0.0648	| 0.2545 |	0.0609 | 0.0127	 | 39.9824 | 0.9982	| 0.8032    |
+| 4	| (2, 0.5)	|  0.4511	       | 1.8217           |	0.0648	| 0.2545 |	0.0609 | 0.0128	 | 39.9823 | 0.9982	| 0.8033    |
+| 5	| (2, 0.6)	|  0.4518	       |  1.8241          |	0.0648	| 0.2545 |	0.0609 | 0.0128	 | 39.9823 | 0.9982	| 0.8038    |
+| 6	| (2, 0.7)	|  0.4518	       | 1.8241           |	0.0648	| 0.2545 |	0.0609 | 0.0128	 | 39.9823 | 0.9982	| 0.8038    |
+| 7	| (2, 0.8)	|  0.5015        |	2.0060          |	0.4544	| 0.6741 |	0.1613 | 0.0407	 | 31.5220 | 0.9869	| 0.8268    |
 
 - You can also check the optimal combination by running the following code:
 
@@ -93,29 +102,27 @@ display_multirun_optimal_values(result_df=result_df)
 ```
 > Parameter combinations for  MAX CF_SCORE
 > 
->            param  reduction_rate  reduction_factor   mse  rmse  nrmse  mae   
->     239  (35, 0.2)            0.96             22.86 37.25  6.10   0.16 1.35  
->     240  (35, 0.3)            0.96             23.30 38.06  6.17   0.16 1.39   
+>                   param    reduction_rate  reduction_factor     mse      rmse    nrmse  \
+>           440  (24, 0.1)          0.9224           12.8919    0.6085  0.7801  0.1867   
 >
->            psnr  ncc  cf_score  
->     239 31.56 0.99      0.98  
->     240 31.47 0.99      0.98  
->Parameter combinations for NEAR  MAX CF_SCORE
+>                  mae    psnr     ncc    cf_score  
+>           440  0.1294  30.254  0.9825    0.9698
+> Parameter combinations for NEAR  MAX CF_SCORE
 >
 >
->            param  reduction_rate  reduction_factor   mse  rmse  nrmse  mae   
->     99   (15, 0.2)            0.91             11.61 32.59  5.71   0.15 1.05  \
->     215  (31, 0.6)            0.96             27.59 82.61  9.09   0.23 2.53   
->     157  (23, 0.4)            0.94             17.06 60.59  7.78   0.20 1.59   
->     105  (16, 0.1)            0.92             11.87 32.77  5.72   0.15 1.04   
->     171  (25, 0.4)            0.95             18.24 62.56  7.91   0.20 1.69   
+>             param  reduction_rate    reduction_factor     mse    rmse   nrmse  \
+>      521  (28, 0.2)          0.9336           15.0531  1.1504  1.0726  0.2567   
+>      364  (20, 0.5)          0.9118           11.3396  0.9458  0.9725  0.2328   
+>      262  (15, 0.3)          0.8810            8.4029  0.6337  0.7960  0.1905   
+>      363  (20, 0.4)          0.9102           11.1352  0.9084  0.9531  0.2281   
+>      543  (29, 0.4)          0.9372           15.9222  1.1474  1.0712  0.2564   
 >
->            psnr  ncc  cf_score  
->      99  32.14 0.99      0.97  
->      215 28.10 0.97      0.97  
->      157 29.45 0.98      0.97  
->      105 32.12 0.99      0.97  
->      171 29.31 0.98      0.97  
+>            mae     psnr     ncc     cf_score  
+>      521  0.1810  27.4883  0.9666    0.9598  
+>      364  0.1431  28.3388  0.9726    0.9598  
+>      262  0.0907  30.0780  0.9817    0.9598  
+>      363  0.1323  28.5140  0.9737    0.9603  
+>      543  0.1925  27.4996  0.9667    0.9607   
 
 
 ---
@@ -128,7 +135,8 @@ plot_multirun_metric_results(result_df=result_df)
 ```
 - The result should look like this;
 
-![image](https://github.com/MiguelEuripedes/TACpy/assets/56210040/1c84f28c-7de8-408e-a7e4-5ad5e4e07687)
+![image](https://github.com/conect2ai/Conect2Py-Package/assets/56210040/085573e6-29fb-4b6b-95ee-a3f7f537e83c)
+
 
 ---
 
@@ -144,7 +152,7 @@ print("Best compressor param combination: ", optimal_param_list)
 
 ```Python
 points_to_keep, optimal_results_details = run_optimal_combination(optimal_list=optimal_param_list,
-                                                          serie_to_compress=df['voltage'].dropna(),
+                                                          serie_to_compress=dataframe['sensor_data'].dropna(),
                                                           model='TAC'
                                                           )
 ```
@@ -154,20 +162,20 @@ points_to_keep, optimal_results_details = run_optimal_combination(optimal_list=o
 print_run_details(optimal_results_details)
 ```
 > POINTS:
->  - total checked:  50879
->  - total kept:  1114
->  - percentage discaded:  97.81 %
+>  - total checked:  30889
+>  - total kept:  1199
+>  - percentage discaded:  96.12 %
 >
 > POINT EVALUATION TIMES (ms): 
->  - mean:  0.0021414514134244587
->  - std:  0.046957627024743445
+>  - mean:  0.003636738161744472
+>  - std:  0.15511020000857362
 >  - median:  0.0
->  - max:  1.5192031860351562
+>  - max:  13.513565063476562
 >  - min:  0.0
->  - total:  108.95490646362305
+>  - total:  112.335205078125
 >
 > RUN TIME (ms):
->  - total:  119.3452
+>  - total:  124.2864
 
 ---
 
@@ -178,7 +186,7 @@ print_run_details(optimal_results_details)
 **1. Step - Create the evaluation dataframe:**
    
   ```Python
-    evaluation_df = create_eval_df(original=df['voltage'].dropna(), flag=points_to_keep)
+    evaluation_df = create_eval_df(original=dataframe['sensor_data'].dropna(), flag=points_to_keep)
     evaluation_df.info()
   ```
 
@@ -203,32 +211,32 @@ print_compression_report(
 After that you expect to see something like the following informations:
 
 > RUN INFO 
-> - Model:  TAC_Voltage_data
-> - Optimal Params:  [(35, 0.2), (35, 0.3)]
+> - Model:  TAC_Compression
+> - Optimal Params:  [(24, 0.1)]
 > - CF-Score Beta:  2
 >
 > RESULTS 
 >
 > SAMPLES NUMBER reduction
-> - Original length:  50879  samples
-> - Reduced length:  1114  samples
-> - Samples reduced by a factor of 45.67 times
-> - Sample reduction rate: 97.81%
+> - Original length:  30889  samples
+> - Reduced length:  1199  samples
+> - Samples reduced by a factor of 25.76 times
+> - Sample reduction rate: 96.12%
 >
 > FILE SIZE compression
-> - Original size:  544858  Bytes
-> - Compressed size:  14165  Bytes
-> - file compressed by a factor of 38.47 times
-> - file compression rate: 97.4%
+> - Original size:  385549  Bytes
+> - Compressed size:  14974  Bytes
+> - file compressed by a factor of 25.75 times
+> - file compression rate: 96.12%
 >
 > METRICS
-> - MSE:  41.3406
-> - RMSE:  6.4297
-> - NRMSE:  0.164
-> - MAE:  1.4593
-> - PSNR:  31.1085
-> - NCC:  0.9865
-> - CF-Score:  0.984
+> - MSE:  0.622
+> - RMSE:  0.7886
+> - NRMSE:  0.1888
+> - MAE:  0.1384
+> - PSNR:  30.1591
+> - NCC:  0.9821
+> - CF-Score:  0.9778
 
 
 **3. Step - Create the model visualizations:**
@@ -244,7 +252,8 @@ plot_curve_comparison(
 ```
 
 And finally here is a example of the result:
-![image](https://github.com/MiguelEuripedes/TACpy/assets/56210040/ca5cc3d5-841b-4aec-9098-77dc96783369)
+
+![image](https://github.com/conect2ai/Conect2Py-Package/assets/56210040/70268f4c-41c5-49b9-9de0-dd39c7a1b6fb)
 
 
 
