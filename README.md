@@ -1,9 +1,10 @@
 &nbsp;
 &nbsp;
 <p align="center">
-  <img width="800" src="https://github.com/conect2ai/Conect2Py-Package/assets/56210040/f5350c5a-d1ce-4773-9913-86d943c8ea41" />
+  <img width="800" src="https://github.com/conect2ai/Conect2Py-Package/assets/56210040/8bd859a9-7467-4e59-bf09-27abd61c09f5" />
 </p>
 &nbsp;
+
 
 # Conect2Ai - TAC python package
 
