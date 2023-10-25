@@ -8,7 +8,7 @@
 
 # Conect2Ai - TAC python package
 
-Conect2Py-Package the name for the Conect2ai Python software package. The package contains the implementation of TAC, an algorithm for data compression using TAC (Tiny Anomaly Compression). The TAC algorithm is based on the concept the data eccentricity and does not require previously established mathematical models or any assumptions about the underlying data distribution.  Additionally, it uses recursive equations, which enables an efficient computation with low computational cost, using little memory and processing power.
+Conect2Py-Package is the name given for the Conect2ai Python software package. The package contains the implementation of TAC, an algorithm for data compression using TAC (Tiny Anomaly Compression). The TAC algorithm is based on the concept the data eccentricity and does not require previously established mathematical models or any assumptions about the underlying data distribution.  Additionally, it uses recursive equations, which enables an efficient computation with low computational cost, using little memory and processing power.
 
 Currente version:  ![version](https://img.shields.io/badge/version-0.1.1-blue)
 
@@ -51,17 +51,17 @@ Or try each of our implemented functionalities
 
 ```Python
 # MODEL FUNCTIONS
-from tac.models.TAC import TAC
-from tac.models.AutoTAC import AutoTAC
+from conect2ai.models.TAC import TAC
+from conect2ai.models.AutoTAC import AutoTAC
 
 # RUN FUNCTIONS
-from tac.run.single import (print_run_details)
-from tac.run.multiple import (run_multiple_instances, get_optimal_params, display_multirun_optimal_values, run_optimal_combination)
+from conect2ai.run.single import (print_run_details)
+from conect2ai.run.multiple import (run_multiple_instances, get_optimal_params, display_multirun_optimal_values, run_optimal_combination)
 
 # UTILS FUNCTIONS
-from tac.utils.format_save import (create_param_combinations, create_compressor_list, create_eval_df) 
-from tac.utils.metrics import (get_compression_report, print_compression_report, calc_statistics)
-from tac.utils.plots import (plot_curve_comparison, plot_dist_comparison, plot_multirun_metric_results)
+from conect2ai.utils.format_save import (create_param_combinations, create_compressor_list, create_eval_df) 
+from conect2ai.utils.metrics import (get_compression_report, print_compression_report, calc_statistics)
+from conect2ai.utils.plots import (plot_curve_comparison, plot_dist_comparison, plot_multirun_metric_results)
 
 ```
 
