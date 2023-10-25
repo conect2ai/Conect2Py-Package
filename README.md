@@ -16,16 +16,24 @@ Currente version:  ![version](https://img.shields.io/badge/version-0.1.0-blue)
 #### Dependencies
 
 ```bash
-Python 3.11, Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, Ipython
+Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, Ipython
 ```
 
 ---
 ## Installation
 
-*In progress...*
+#### You can download our package from the PyPi repository using the following command:
 
 ```bash
-pip install tac
+pip install conect2py
+```
+
+#### If you want to install it locally you download the Wheel distribution from [Build Distribution](https://pypi.org/project/conect2py/0.1.1/#files).
+
+*First navigate to the folder where you downloaded the file and run the following command:*
+
+```bash
+pip install conect2py-0.1.1-py3-none-any.whl
 ```
 
 ---
