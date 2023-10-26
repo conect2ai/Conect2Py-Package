@@ -1,8 +1,9 @@
 &nbsp;
 &nbsp;
 <p align="center">
-  <img width="800" src="https://github.com/conect2ai/Conect2Py-Package/assets/56210040/8bd859a9-7467-4e59-bf09-27abd61c09f5" />
-</p>
+  <img width="800" src="https://github.com/conect2ai/Conect2Py-Package/assets/56210040/60055d32-77f0-4381-bfc1-c9300eb30920" />
+</p> 
+
 &nbsp;
 
 
@@ -141,7 +142,8 @@ plot_multirun_metric_results(result_df=result_df)
 ```
 - The result should look like this;
 
-![image](https://github.com/conect2ai/Conect2Py-Package/assets/56210040/085573e6-29fb-4b6b-95ee-a3f7f537e83c)
+![image](https://github.com/conect2ai/Conect2Py-Package/assets/56210040/143b1da9-3e45-4ebc-bcc0-2cafd44ec925)
+
 
 
 ---
@@ -259,7 +261,8 @@ plot_curve_comparison(
 
 And finally here is a example of the result:
 
-![image](https://github.com/conect2ai/Conect2Py-Package/assets/56210040/70268f4c-41c5-49b9-9de0-dd39c7a1b6fb)
+![image](https://github.com/conect2ai/Conect2Py-Package/assets/56210040/978fdeaa-688c-4c8a-90c7-7726eab96302)
+
 
 
 
