@@ -5,8 +5,8 @@ import IPython.display as display
 
 from ..utils.format_save import create_eval_df
 from ..utils.metrics import get_compression_report
-#from ..models.TAC import TAC
-#from ..models.AutoTAC import AutoTAC
+from ..models.TAC import TAC
+from ..models.AutoTAC import AutoTAC
 
 from .single import run_single_online, run_single_offline
 
