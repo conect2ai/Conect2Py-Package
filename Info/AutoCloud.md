@@ -5,10 +5,10 @@
 The Autocloud is an algorithm for data clustering and classification that employs structures known as data clouds. These data clouds, unlike having pre-defined shapes or boundaries, constitute a collection of data sharing common characteristics in n-dimensional space. In simpler terms, they consist of data points closely aligned within the feature space mapping. Stemming from the equations of TEDA (Typicality and Eccentricity Data Analytics), Autocloud computes the normalized eccentricity for each new sample concerning every existing data cloud.
 
 
-- [Documentation](#documentação)
-- [Usage](#como-usar)
-- [References](#contribuição)
-- [License](#licença)
+- [Documentation](#documentation)
+- [Usage](#use-case-example)
+- [References](#references)
+- [License](#license)
 
 ## Documentation
 
