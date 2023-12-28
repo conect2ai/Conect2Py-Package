@@ -11,7 +11,16 @@
 
 Conect2Py-Package is the name given for the Conect2ai Python software package. The package contains the implementation of TAC, an algorithm for data compression using TAC (Tiny Anomaly Compression). The TAC algorithm is based on the concept the data eccentricity and does not require previously established mathematical models or any assumptions about the underlying data distribution.  Additionally, it uses recursive equations, which enables an efficient computation with low computational cost, using little memory and processing power.
 
-Currente version:  ![version](https://img.shields.io/badge/version-0.1.1-blue)
+<p align="right">
+  <img alt="version" src="https://img.shields.io/badge/version-0.1.1-blue">
+</p>
+
+
+
+- [Installation](#installation)
+- [Usage](#usage-example)
+- [References](#literature-reference)
+- [License](#license)
 
 ---
 #### Dependencies
@@ -39,7 +48,7 @@ pip install conect2py-0.1.1-py3-none-any.whl
 
 ---
 
-## Example of Use
+## Usage Example
 
 To begin you can import TACpy using
 
@@ -266,17 +275,18 @@ And finally here is a example of the result:
 
 
 
+## Other Models
 
-
-
-
-
-
-
+Please check the [informations](https://conect2ai.github.io/Conect2Py-Package/Info/AutoCloud.md) for more information about the other models been implemented in this package.
 
 
 # Literature reference
 
+
 1. Signoretti, G.; Silva, M.; Andrade, P.; Silva, I.; Sisinni, E.; Ferrari, P. "An Evolving TinyML Compression Algorithm for IoT Environments Based on Data Eccentricity". Sensors 2021, 21, 4153. https://doi.org/10.3390/s21124153
 
 2. Medeiros, T.; Amaral, M.; Targino, M; Silva, M.; Silva, I.; Sisinni, E.; Ferrari, P.; "TinyML Custom AI Algorithms for Low-Power IoT Data Compression: A Bridge Monitoring Case Study" - 2023 IEEE International Workshop on Metrology for Industry 4.0 & IoT (MetroInd4.0&IoT), 2023. [10.1109/MetroInd4.0IoT57462.2023.10180152](https://ieeexplore.ieee.org/document/10180152])
+
+# License
+
+This package is licensed under the [MIT License](https://github.com/conect2ai/Conect2Py-Package/blob/main/LICENSE) - © 2023 Conect2ai.
