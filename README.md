@@ -277,7 +277,7 @@ And finally here is a example of the result:
 
 ## Other Models
 
-Please check the [informations](https://conect2ai.github.io/Conect2Py-Package/Info/AutoCloud.md) for more information about the other models been implemented in this package.
+Please check the [informations](https://github.com/conect2ai/Conect2Py-Package/blob/main/Info/AutoCloud.md) for more information about the other models been implemented in this package.
 
 
 # Literature reference
