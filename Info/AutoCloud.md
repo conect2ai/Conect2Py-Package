@@ -70,9 +70,9 @@ The TEDACloud class is responsible for managing these DataClouds, creating new c
 
 ## Use Case Example
 
-Here is an illustrative example of utilizing the TEDACloud class to execute the TEDA algorithm offline on a DataFrame containing features derived from data collected from a car by our team. In this particular instance, we have set the parameter `m` to 2 and established a maximum limit of 3 clouds.
+Here is an illustrative example of utilizing the TEDACloud class to execute the AutoCloud algorithm offline on a DataFrame containing features derived from data collected from a car by our team. In this particular instance, we have set the parameter `m` to 2 and established a maximum limit of 3 clouds.
 
-The primary objective is to leverage the engine load data, along with another feature named 'areas,' which has been calculated separately during a pre-processing data stage. With these two values, our aim is to generate data clusters capable of classifying the driver's behavior.
+The primary objective is to leverage the engine load data, along with another feature named 'areas,' which has been calculated separately during a pre-processing data stage. In this case study, with these two values, our aim is to generate data clusters capable of classifying the driver's behavior.
 
 For a detailed walkthrough of this example, you can refer to the accompanying notebook available [here](https://github.com/conect2ai/Conect2Py-Package/NotebooksAutoCloud_UseCase_Test.ipynb).
 
