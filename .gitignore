@@ -4,6 +4,6 @@ dist/
 *.egg-info/
 *.egg
 old_src/
-venv
+pckg-venv/
 TESTE.py
 
