@@ -50,28 +50,28 @@ pip install conect2py-0.1.1-py3-none-any.whl
 
 ## Usage Example
 
-To begin you can import TACpy using
+To begin you can import `conect2py` using
 
 ```Python
 # FULL PACKAGE
-import tac
+import conect2py
 ```
 
 Or try each of our implemented functionalities
 
 ```Python
 # MODEL FUNCTIONS
-from conect2ai.models.TAC import TAC
-from conect2ai.models.AutoTAC import AutoTAC
+from conect2py.models import TAC
+from conect2py.models import AutoTAC
 
 # RUN FUNCTIONS
-from conect2ai.run.single import (print_run_details)
-from conect2ai.run.multiple import (run_multiple_instances, get_optimal_params, display_multirun_optimal_values, run_optimal_combination)
+from conect2py.run.single import print_run_details, run_single_online, run_single_offline
+from conect2py.run.multiple import run_multiple_instances, get_optimal_params, display_multirun_optimal_values, run_optimal_combination
 
 # UTILS FUNCTIONS
-from conect2ai.utils.format_save import (create_param_combinations, create_compressor_list, create_eval_df) 
-from conect2ai.utils.metrics import (get_compression_report, print_compression_report, calc_statistics)
-from conect2ai.utils.plots import (plot_curve_comparison, plot_dist_comparison, plot_multirun_metric_results)
+from conect2py.utils.format_save import create_param_combinations, create_compressor_list, create_eval_df 
+from conect2py.utils.metrics import get_compression_report, print_compression_report, calc_statistics
+from conect2py.utils.plots import plot_curve_comparison, plot_dist_comparison, plot_multirun_metric_results 
 
 ```
 
