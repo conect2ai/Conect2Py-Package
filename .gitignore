@@ -1,6 +1,7 @@
 __pycache__/
 build/
 dist/
+Notebooks/AutoCloud_UseCase_Test.ipynb
 *.egg-info/
 *.egg
 old_src/

@@ -8,7 +8,7 @@ setup(
     name="conect2py",
 
     # Version
-    version="0.1.2",
+    version="0.1.3",
 
     # Packages
     packages=find_packages(include=['conect2py', 'conect2py.*']),
@@ -37,5 +37,5 @@ setup(
     # This field is OPTIONAL
     keywords="TEDA, TAC, Annomaly Detection, Data Compression, IoT, Eccentricity",
 
-    install_requires=['numpy>=1.26', 'pandas>=2.1', 'matplotlib>=3.8', 'seaborn>=0.13', 'ipython>=8.16', 'scikit-learn>=1.3']
+    install_requires=['numpy>=1.26', 'pandas>=2.0', 'matplotlib>=3.8', 'seaborn>=0.13', 'ipython>=7.34', 'scikit-learn>=1.3']
 )
