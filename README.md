@@ -50,6 +50,9 @@ pip install conect2py-0.1.1-py3-none-any.whl
 
 ## Usage Example
 
+This usage example can be run on a Colab Notebook here
+[![Jupyter](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://colab.research.google.com/drive/1tIjo1skrBGJhSckNrAQos3K7pX3pka-s?usp=sharing)
+
 To begin you can import `conect2py` using
 
 ```Python
