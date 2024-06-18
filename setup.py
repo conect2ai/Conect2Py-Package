@@ -8,7 +8,7 @@ setup(
     name="conect2py",
 
     # Version
-    version="0.1.3",
+    version="0.1.4",
 
     # Packages
     packages=find_packages(include=['conect2py', 'conect2py.*']),
